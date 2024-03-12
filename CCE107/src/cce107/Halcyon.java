@@ -15,6 +15,7 @@ public class Halcyon extends javax.swing.JFrame {
      */
     public Halcyon() {
         initComponents();
+        setLocationRelativeTo(null);
     }
 
     /**
@@ -53,8 +54,8 @@ public class Halcyon extends javax.swing.JFrame {
         });
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 530, 130, 50));
 
-        pin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/title/pin.png"))); // NOI18N
-        getContentPane().add(pin, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 320, 200, 190));
+        pin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/title/pin (3).png"))); // NOI18N
+        getContentPane().add(pin, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 230, 230, 260));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/title/gradient.png"))); // NOI18N
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1010, 610));
@@ -67,7 +68,8 @@ public class Halcyon extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        
+        this.dispose();
+        new Booking().setVisible(true);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
@@ -77,7 +79,7 @@ public class Halcyon extends javax.swing.JFrame {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
